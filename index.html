@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Slider Responsive</title>
+
+	<link rel="stylesheet" href="flexslider.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script><!--importo desde una cdn-->
+	<script src="js/jquery.flexslider.js"></script><!--importo desde mi propio proyecto-->
+
+	<script type="text/javascript" charset="utf-8">
+	/*Cargo el contenido de la pagina anes de inicializarla*/
+	  $(window).load(function() {
+	    $('.flexslider').flexslider({
+	    	touch: true,
+	    	pauseOnAction: false,
+	    	pauseOnHover: false,
+	    });
+	  });
+	</script>
+</head>
+<body>
+
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="imgs/goku10.jpg" alt="">
+				<section class="flex-caption">
+					<p>LOREM IPSUM 1</p>
+				</section>
+			</li>
+			<li>
+				<img src="imgs/goku11.jpg" alt="">
+				<section class="flex-caption">
+					<p>LOREM IPSUM 2</p>
+				</section>
+			</li>
+			<li>
+				<img src="imgs/goku12.jpg" alt="">
+				<section class="flex-caption">
+					<p>LOREM IPSUM 3</p>
+				</section>
+			</li>
+			<!--<li>
+				<img src="imgs/goku4.jpg" alt="">
+				<section class="flex-caption">
+					<p>LOREM IPSUM 4</p>
+				</section>
+			</li>
+			<li>
+				<img src="imgs/goku5.jpg" alt="">
+				<section class="flex-caption">
+					<p>LOREM IPSUM 5</p>
+				</section>
+			</li>
+			<li>
+				<img src="imgs/goku6.jpg" alt="">
+				<section class="flex-caption">
+					<p>LOREM IPSUM 1</p>
+				</section>
+			</li>-->
+		</ul>
+	</div>
+
+</body>
+</html>
